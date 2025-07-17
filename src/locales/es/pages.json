@@ -1,0 +1,978 @@
+{
+    "pages": {
+        "provinces": {
+            "PRI": "Pinar del Río",
+            "ART": "Artemisa",
+            "LHA": "La Habana",
+            "MAY": "Mayabeque",
+            "MTZ": "Matanzas",
+            "CFG": "Cienfuegos",
+            "VLC": "Villa Clara",
+            "SSP": "Sancti Spíritus",
+            "CAV": "Ciego de Ávila",
+            "CAM": "Camagüey",
+            "LTU": "Las Tunas",
+            "HOL": "Holguín",
+            "GRM": "Granma",
+            "SCU": "Santiago de Cuba",
+            "GTM": "Guantánamo",
+            "IJV": "Isla de la Juventud"
+        },
+        "province-products": {
+            "province": "Provincia",
+            "list": {
+                "title": "Listado de Productos por Provincia",
+                "provinceSelect": {
+                    "label": "Selecciona la provincia deseada",
+                    "allProvinces": "Todas las provincias"
+                }
+            },
+            "details": {
+                "title": "Detalles del Producto por Provincia",
+                "subtitle": "Provincia {{provinceId}}",
+                "notFound": "Producto de provincia no encontrado",
+                "backToList": "Volver a Productos por Provincia",
+                "editButton": "Editar Producto de Provincia",
+                "viewProductButton": "Ver Producto",
+                "basicInfo": "Información Básica",
+                "pricingInfo": "Información de Precios",
+                "stockInfo": "Información de Stock",
+                "status": "Estado",
+                "quickActions": "Acciones Rápidas",
+                "metadata": "Metadatos",
+                "province": "Provincia",
+                "off": "DESCUENTO",
+                "savings": "Ahorras",
+                "saved": "ahorrado",
+                "offerActive": "Oferta Especial Activa",
+                "units": "unidades",
+                "stockStatus": "Estado del Stock",
+                "inStock": "En Stock",
+                "lowStock": "Stock Bajo",
+                "outOfStock": "Sin Stock",
+                "viewProduct": "Ver Producto Base",
+                "editProvinceProduct": "Editar Producto de Provincia"
+            },
+            "stockType": {
+                "Normal": "Normal",
+                "PreOrder": "Bajo Demanda"
+            },
+            "table": {
+                "entityName": "productos por provincia",
+                "columns": {
+                    "productName": "Nombre del Producto",
+                    "price": "Precio",
+                    "catalogPosition": "Posición en Catálogo",
+                    "stockType": "Tipo de Stock",
+                    "stockAmount": "Cantidad en Stock",
+                    "inOffer": "En Oferta",
+                    "offerPercent": "% Descuento",
+                    "costPrice": "Precio de Costo",
+                    "sellPrice": "Precio de Venta"
+                },
+                "badges": {
+                    "yes": "Sí",
+                    "no": "No"
+                }
+            },
+            "edit": {
+                "title": "Editar Producto por Provincia",
+                "subTitle": "Modifica los datos del producto en la provincia",
+                "button": "Actualizar Producto",
+                "success": "Producto actualizado exitosamente"
+            },
+            "form": {
+                "costPrice": {
+                    "label": "Precio de Costo",
+                    "reference": "Precio de costo",
+                    "minimumRequired": "Mínimo requerido",
+                    "warningMessage": "El precio de venta no puede ser menor al precio de costo (${costPrice})",
+                    "validationMessage": "El precio debe ser mayor o igual al precio de costo (${costPrice})",
+                    "belowCostWarning": "El precio está por debajo del costo",
+                    "profitMargin": "Margen de ganancia"
+                },
+                "input": {
+                    "price": {
+                        "label": "Precio",
+                        "placeholder": "0.00"
+                    },
+                    "catalogPosition": {
+                        "label": "Posición en Catálogo",
+                        "placeholder": "Ej: 1, 2, 3..."
+                    },
+                    "stockType": {
+                        "label": "Tipo de Stock",
+                        "placeholder": "Selecciona un tipo"
+                    },
+                    "stockAmount": {
+                        "label": "Cantidad en Stock",
+                        "placeholder": "0"
+                    },
+                    "inOffer": {
+                        "label": "En Oferta"
+                    },
+                    "offerPercent": {
+                        "label": "Porcentaje de Descuento",
+                        "placeholder": "Ej: 0.1, 0.2, 0.5..."
+                    },
+                    "sellPrice": {
+                        "label": "Precio de Venta",
+                        "placeholder": "0.00"
+                    }
+                }
+            }
+        },
+        "products": {
+            "list": {
+                "title": "Listado de Productos"
+            },
+            "details": {
+                "title": "Detalles del Producto",
+                "notFound": "Producto no encontrado",
+                "backToList": "Volver a Productos",
+                "editButton": "Editar Producto",
+                "basicInfo": "Información Básica",
+                "packItems": "Artículos del Conjunto",
+                "items": "artículos",
+                "item": "Artículo",
+                "units": "unidades",
+                "noItems": "No hay artículos en este conjunto",
+                "status": "Estado",
+                "metadata": "Metadatos",
+                "provinceProduct": "Detalles del producto por provincias",
+                "noProvinceData": "No hay productos por provincia disponibles",
+                "images": "Imágenes",
+                "image": "imagen",
+                "thumbnail": "miniatura",
+                "viewAllImages": "Ver todas las imágenes",
+                "descriptionInfo": "Esta descripción sera mostrada en la tienda online tal cual está",
+                "viewSerialNumbers": "Ver Números de Serie"
+            },
+            "create": {
+                "title": "Crear Producto",
+                "subTitle": "Agrega un nuevo producto a tu inventario",
+                "button": "Crear Producto",
+                "success": "Producto creado exitosamente"
+            },
+            "edit": {
+                "title": "Editar Producto",
+                "subTitle": "Modifica los datos del producto existente",
+                "button": "Actualizar Producto",
+                "success": "Producto actualizado exitosamente"
+            },
+            "dialogs": {
+                "manageTags": {
+                    "title": "Gestionar Etiquetas",
+                    "description": "Gestiona las etiquetas asociadas a este producto",
+                    "autocomplete": {
+                        "title": "Etiquetas",
+                        "placeholder": "Buscar o escribir nueva etiqueta..."
+                    },
+                    "successMessage": "Se agregaron las etiquetas exitosamente",
+                    "errorMessage": "Hubo un problema agregando las etiquetas"
+                },
+                "manageImages": {
+                    "title": "Gestionar Imágenes",
+                    "description": "Gestiona las imágenes asociadas a este producto",
+                    "existingImages": "Imágenes Existentes",
+                    "newImages": "Nuevas Imágenes",
+                    "removeImage": "Eliminar imagen",
+                    "removeSelected": "Eliminar Seleccionadas",
+                    "selectAll": "Seleccionar Todas",
+                    "deselectAll": "Deseleccionar Todas",
+                    "selectedCount": "{{count}} seleccionadas",
+                    "noExistingImages": "No hay imágenes existentes",
+                    "noNewImages": "No hay imágenes nuevas para agregar",
+                    "confirmRemove": "¿Está seguro que desea eliminar las imágenes seleccionadas? Esta acción no se puede deshacer.",
+                    "confirmRemoveTitle": "Eliminar Imágenes",
+                    "confirmRemoveSingle": "¿Está seguro que desea eliminar esta imagen? Esta acción no se puede deshacer.",
+                    "confirmRemoveSingleTitle": "Eliminar Imagen",
+                    "imagesRemoved": "Imágenes eliminadas exitosamente",
+                    "imageRemoved": "Imagen eliminada exitosamente",
+                    "errorRemovingImages": "Error al eliminar las imágenes",
+                    "errorRemovingImage": "Error al eliminar la imagen",
+                    "successMessage": "Se agregaron las imágenes exitosamente",
+                    "errorMessage": "Hubo un problema agregando las imágenes"
+                }
+            },
+            "form": {
+                "input": {
+                    "name": {
+                        "label": "Nombre del Producto",
+                        "placeholder": "Ej: Laptop, Smartphone, Televisor"
+                    },
+                    "model": {
+                        "label": "Modelo",
+                        "placeholder": "Ej: ProBook 450 G9"
+                    },
+                    "brand": {
+                        "label": "Marca",
+                        "placeholder": "Ej: HP, Dell, Lenovo"
+                    },
+                    "description": {
+                        "label": "Descripción",
+                        "placeholder": "Describe las características del producto..."
+                    },
+                    "category": {
+                        "label": "Categoría",
+                        "placeholder": "Selecciona una categoría"
+                    },
+                    "sku": {
+                        "label": "SKU",
+                        "placeholder": "Ej: HP-PRBK-001"
+                    },
+                    "alias": {
+                        "label": "Alias",
+                        "placeholder": "Nombre alternativo"
+                    },
+                    "unitOfMeasure": {
+                        "label": "Unidad de Medida",
+                        "placeholder": "Selecciona una unidad"
+                    },
+                    "requiresSerialNumber": {
+                        "label": "Requiere registrar número de serie",
+                        "description": "Cada instancia de este producto será registrada individualmente en el inventario (ej: números IMEI para teléfonos, números de serie para electrónicos)"
+                    },
+                    "productType": {
+                        "label": "Tipo de Producto",
+                        "placeholder": "Selecciona un tipo",
+                        "Normal": "Normal",
+                        "Bundle": "Paquete",
+                        "Pack": "Pack"
+                    },
+                    "tags": {
+                        "label": "Etiquetas",
+                        "placeholder": "Ej: electrónicos, computadoras, HP",
+                        "help": "Separa las etiquetas con comas",
+                        "existingTags": "Etiquetas Existentes",
+                        "removeTag": "Eliminar etiqueta",
+                        "noTags": "No hay etiquetas asignadas"
+                    },
+                    "isActive": {
+                        "label": "Producto Activo"
+                    }
+                }
+            },
+            "productType": {
+                "Normal": "Normal",
+                "Bundle": "Paquete",
+                "Pack": "Conjunto"
+            },
+            "unitOfMeasure": {
+                "Unit": {
+                    "short": "Un",
+                    "long": "Unidad"
+                },
+                "Lbs": {
+                    "short": "Lb",
+                    "long": "Libras"
+                },
+                "Oz": {
+                    "short": "Oz",
+                    "long": "Onzas"
+                },
+                "Kg": {
+                    "short": "Kg",
+                    "long": "Kilogramos"
+                },
+                "Grams": {
+                    "short": "g",
+                    "long": "Gramos"
+                },
+                "Liters": {
+                    "short": "L",
+                    "long": "Litros"
+                },
+                "Milliliters": {
+                    "short": "mL",
+                    "long": "Mililitros"
+                },
+                "Gallons": {
+                    "short": "Gal",
+                    "long": "Galones"
+                },
+                "Feet": {
+                    "short": "ft",
+                    "long": "Pies"
+                },
+                "Inches": {
+                    "short": "in",
+                    "long": "Pulgadas"
+                },
+                "Meters": {
+                    "short": "m",
+                    "long": "Metros"
+                },
+                "Centimeters": {
+                    "short": "cm",
+                    "long": "Centímetros"
+                },
+                "Box": {
+                    "short": "Bx",
+                    "long": "Caja"
+                },
+                "Case": {
+                    "short": "Cs",
+                    "long": "Estuche"
+                },
+                "Pack": {
+                    "short": "Pk",
+                    "long": "Paquete"
+                },
+                "Dozen": {
+                    "short": "Dz",
+                    "long": "Docena"
+                }
+            },
+            "actions": {
+                "duplicate": {
+                    "label": "Duplicar producto",
+                    "confirmationMessage": "¿Está seguro que desea duplicar este producto?"
+                },
+                "manageTags": {
+                    "label": "Gestionar Tags"
+                },
+                "manageImages": {
+                    "label": "Gestionar Imágenes"
+                },
+                "viewSerialNumbers": "Ver Números de Serie"
+            },
+            "table": {
+                "entityName": "productos",
+                "createButton": "Crear Producto",
+                "createPackButton": "Crear Conjunto",
+                "columns": {
+                    "image": "Imagen",
+                    "name": "Nombre",
+                    "brand": "Marca",
+                    "model": "Modelo",
+                    "requiresSerialNumber": "Requiere Número de Serie",
+                    "category": "Categoría",
+                    "alias": "Alias",
+                    "description": "Descripción",
+                    "tags": "Etiquetas",
+                    "productType": "Tipo de producto",
+                    "unitOfMeasure": "Unidad de Medida",
+                    "isLowStock": "Stock Bajo",
+                    "isActive": "Activo"
+                },
+                "badges": {
+                    "yes": "Sí",
+                    "no": "No"
+                }
+            },
+            "pack": {
+                "create": {
+                    "title": "Crear Conjunto",
+                    "subTitle": "Agrega un nuevo conjunto a tu inventario",
+                    "button": "Crear Conjunto",
+                    "success": "Conjunto creado exitosamente"
+                },
+                "edit": {
+                    "title": "Editar Conjunto",
+                    "subTitle": "Modifica los datos del conjunto existente",
+                    "button": "Actualizar Conjunto",
+                    "success": "Conjunto actualizado exitosamente"
+                },
+                "error": {
+                    "alreadyAdded": "Este producto ya está agregado al conjunto",
+                    "mainProductNotAllowed": "No se puede agregar el producto principal al conjunto"
+                },
+                "items": {
+                    "label": "Productos del Conjunto",
+                    "placeholder": "Buscar productos para agregar al conjunto...",
+                    "list": {
+                        "title": "Productos en el conjunto ({{count}})"
+                    }
+                }
+            },
+            "noCategories": {
+                "title": "No hay categorías disponibles",
+                "description": "Para crear un producto, primero necesitas tener al menos una categoría registrada en el sistema.",
+                "createCategoryButton": "Crear Categoría"
+            }
+        },
+        "categories": {
+            "title": "Categorías",
+            "list": {
+                "title": "Listado de Categorías"
+            },
+            "details": {
+                "title": "Detalles de la Categoría",
+                "notFound": "Categoría no encontrada",
+                "backToList": "Volver a Categorías",
+                "subtitle": "Detalles de la Categoría",
+                "basicInfo": "Información Básica",
+                "displayConfig": "Configuración de Visualización",
+                "status": "Estado",
+                "metadata": "Metadatos",
+                "homeDisplay": "Visualización en Página Principal",
+                "homeDisplayDescription": {
+                    "enabled": "Esta categoría es visible en la página principal",
+                    "disabled": "Esta categoría no se muestra en la página principal"
+                }
+            },
+            "create": {
+                "title": "Crear Categoría",
+                "subTitle": "Agrega una nueva categoría para organizar tus productos",
+                "button": "Crear Categoría",
+                "success": "Categoría creada exitosamente"
+            },
+            "edit": {
+                "title": "Editar Categoría",
+                "subTitle": "Modifica los datos de la categoría existente",
+                "button": "Actualizar Categoría",
+                "success": "Categoría actualizada exitosamente"
+            },
+            "form": {
+                "input": {
+                    "name": {
+                        "label": "Nombre de la Categoría",
+                        "placeholder": "Ej: Electrónicos, Ropa, Hogar"
+                    },
+                    "displayHome": {
+                        "label": "Mostrar en página de inicio"
+                    }
+                }
+            },
+            "table": {
+                "entityName": "categorías",
+                "createButton": "Crear Categoría",
+                "columns": {
+                    "name": "Nombre",
+                    "displayHome": "Mostrar en Inicio",
+                    "isActive": "Activo"
+                },
+                "badges": {
+                    "yes": "Sí",
+                    "no": "No"
+                }
+            }
+        },
+        "stockTransfers": {
+            "title": "Órdenes de Transferencia de Inventario",
+            "titleSingle": "Orden de Transferencia",
+            "table": {
+                "entityName": "órdenes de transferencia de inventario",
+                "createButton": "Crear Transferencia",
+                "columns": {
+                    "id": "ID",
+                    "fromProvince": "Provincia Origen",
+                    "toProvince": "Provincia Destino",
+                    "status": "Estado",
+                    "requestedBy": "Solicitado por",
+                    "requestedAt": "Fecha de Solicitud",
+                    "approvedBy": "Aprobado por",
+                    "approvedAt": "Fecha de Aprobación",
+                    "rejectedBy": "Rechazado por",
+                    "rejectedAt": "Fecha de Rechazo",
+                    "receivedBy": "Recibido por",
+                    "receivedAt": "Fecha de Recepción",
+                    "canceledBy": "Cancelado por",
+                    "canceledAt": "Fecha de Cancelación",
+                    "setInTransitBy": "Enviado por",
+                    "setInTransitAt": "Fecha de Envío",
+                    "courier": "Nombre del Transportista",
+                    "totalLines": "Artículos del Pedido",
+                    "observation": "Observación"
+                }
+            },
+            "details": {
+                "title": "Transferencia de Inventario",
+                "notFound": "Transferencia de inventario no encontrada",
+                "backToList": "Volver a Transferencias",
+                "basicInfo": "Información Básica",
+                "transferItems": "Productos a Transferir",
+                "statusTimeline": "Cronología de Estados",
+                "quickActions": "Acciones Rápidas",
+                "metadata": "Metadatos",
+                "products": "productos",
+                "received": "Recibido",
+                "total": "Total",
+                "pending": "Pendiente",
+                "progress": "Progreso",
+                "completed": "Completado",
+                "inProgress": "En Progreso",
+                "summary": "Resumen",
+                "items": "artículos",
+                "rejectedBy": "Rechazado Por",
+                "rejectedAt": "Rechazado En",
+                "rejectionReason": "Motivo de Rechazo",
+                "editTransfer": "Editar Transferencia",
+                "printTransfer": "Imprimir Transferencia",
+                "courier": "Mensajero",
+                "cancelationReason": "Motivo de Cancelación",
+                "requested": "Solicitado",
+                "approved": "Aprobado",
+                "rejected": "Rechazado",
+                "canceled": "Cancelado",
+                "setInTransit": "Puesto en Tránsito",
+                "receivedBy": "Recibido por",
+                "receivedAt": "Fecha de Recepción",
+                "canceledBy": "Cancelado por",
+                "canceledAt": "Fecha de Cancelación",
+                "setInTransitBy": "Puesto en Tránsito por",
+                "setInTransitAt": "Fecha de Tránsito",
+                "statistics": "Estadísticas",
+                "totalProducts": "Total de Productos",
+                "productsReceived": "Productos Recibidos",
+                "productsPending": "Productos Pendientes",
+                "completionRate": "Tasa de Completado",
+                "serialNumbers": "números de serie",
+                "showSerialNumbers": "Ver números de serie",
+                "hideSerialNumbers": "Ocultar números de serie",
+                "serialNumbersInTransfer": "Números de serie en esta transferencia"
+            },
+            "create": {
+                "title": "Crear Transferencia de Inventario",
+                "subTitle": "Crea una nueva orden de transferencia de inventario entre provincias",
+                "button": "Crear Transferencia",
+                "success": "Transferencia de inventario creada exitosamente",
+                "items": {
+                    "required": "Debe agregar al menos un artículo",
+                    "validationError": "Al menos uno de los artículos tiene una cantidad incorrecta"
+                }
+            },
+            "edit": {
+                "title": "Editar Transferencia de Inventario",
+                "subTitle": "Editar detalles de la orden de transferencia de inventario",
+                "button": "Actualizar Transferencia",
+                "success": "Transferencia de inventario actualizada exitosamente"
+            },
+            "form": {
+                "fromProvince": {
+                    "label": "Provincia Origen",
+                    "placeholder": "Selecciona provincia de origen"
+                },
+                "toProvince": {
+                    "label": "Provincia Destino",
+                    "placeholder": "Selecciona provincia de destino"
+                },
+                "observation": {
+                    "label": "Observación",
+                    "placeholder": "Agrega notas o comentarios adicionales..."
+                },
+                "items": {
+                    "label": "Productos a Transferir",
+                    "placeholder": "Buscar y seleccionar productos...",
+                    "list": {
+                        "title": "Productos a transferir ({{count}} artículos)"
+                    },
+                    "totalItems": "Total: {{total}} unidades",
+                    "received": "Recibido",
+                    "total": "Total",
+                    "maxToReceive": "Máximo a Recibir",
+                    "receivingNow": "Recibiendo: {{total}} unidades",
+                    "fullyReceived": "Completamente recibido",
+                    "product": "Producto",
+                    "quantity": "Cantidad",
+                    "noItems": "No hay productos agregados",
+                    "noItemsDescription": "Busque y agregue productos para incluir en esta transferencia",
+                    "pending": "Pendiente",
+                    "requiresSerialNumber": "Requiere Número de Serie"
+                },
+                "serialNumbers": {
+                    "required": "Debe seleccionar al menos un número de serie",
+                    "exactQuantity": "Debe seleccionar exactamente {{quantity}} números de serie",
+                    "noDuplicates": "No puede seleccionar números de serie duplicados",
+                    "loading": "Cargando números de serie...",
+                    "available": "Números de Serie Disponibles",
+                    "searchPlaceholder": "Buscar número de serie...",
+                    "noAvailable": "No hay números de serie disponibles",
+                    "selectExactly": "Selecciona exactamente {{quantity}} números de serie para esta transferencia"
+                }
+            },
+            "error": {
+                "productAlreadyAdded": "Este producto ya está en la lista de transferencia",
+                "sameProvince": "Las provincias de origen y destino deben ser diferentes",
+                "noItems": "Al menos un producto debe ser agregado a la transferencia"
+            },
+            "status": {
+                "PendingApproval": "Pendiente",
+                "Approved": "Aprobada",
+                "Rejected": "Rechazada",
+                "InTransit": "En Tránsito",
+                "PartiallyReceived": "Parcialmente Recibida",
+                "Received": "Recibida",
+                "Cancelled": "Cancelada"
+            },
+            "actions": {
+                "approve": {
+                    "label": "Aprobar Transferencia",
+                    "title": "Aprobar Transferencia",
+                    "confirmationMessage": "¿Está seguro que desea aprobar esta transferencia de inventario?",
+                    "successMessage": "Transferencia aprobada exitosamente",
+                    "errorMessage": "Error al aprobar la transferencia"
+                },
+                "reject": {
+                    "label": "Rechazar Transferencia",
+                    "title": "Rechazar Transferencia",
+                    "confirmationMessage": "¿Está seguro que desea rechazar esta transferencia de inventario? Esta acción no se puede deshacer.",
+                    "successMessage": "Transferencia rechazada exitosamente",
+                    "errorMessage": "Error al rechazar la transferencia"
+                },
+                "cancel": {
+                    "label": "Cancelar Transferencia",
+                    "title": "Cancelar Transferencia",
+                    "confirmationMessage": "¿Está seguro que desea cancelar esta transferencia de inventario? Esta acción no se puede deshacer.",
+                    "successMessage": "Transferencia cancelada exitosamente",
+                    "errorMessage": "Error al cancelar la transferencia"
+                },
+                "setInTransit": {
+                    "title": "Poner en Tránsito",
+                    "description": "Seleccionar números de serie y asignar mensajero para el transporte",
+                    "label": "Poner en Tránsito",
+                    "successMessage": "Transferencia puesta en tránsito exitosamente",
+                    "confirmButton": "Confirmar Tránsito",
+                    "courierLabel": "Mensajero/Transportista",
+                    "courierInputPlaceholder": "Ingrese el nombre del mensajero o empresa de transporte",
+                    "courierHelpText": "Nombre de la persona o empresa responsable del transporte",
+                    "courierInformation": "Información del Transporte",
+                    "transferSummary": "Resumen de la Transferencia",
+                    "transferRoute": "Desde {{from}} hacia {{to}}",
+                    "items": "artículos",
+                    "itemsAndSerialNumbers": "Artículos y Números de Serie",
+                    "itemsDescription": "Seleccione los números de serie específicos para cada producto a transferir"
+                },
+                "receive": {
+                    "label": "Recibir Transferencia",
+                    "title": "Recibir Transferencia",
+                    "confirmationMessage": "¿Está seguro que desea marcar esta transferencia como recibida completamente?",
+                    "successMessage": "Transferencia recibida exitosamente",
+                    "errorMessage": "Error al recibir la transferencia",
+                    "description": "Seleccionar cantidades y números de serie a recibir",
+                    "transferRoute": "Desde {{from}} hacia {{to}}",
+                    "itemsToReceive": "Artículos a Recibir",
+                    "itemsDescription": "Seleccione las cantidades y números de serie específicos que va a recibir",
+                    "quantityToReceive": "Cantidad a Recibir",
+                    "selectSerialNumbers": "Seleccionar Números de Serie",
+                    "totalItemsToReceive": "Total de artículos a recibir",
+                    "confirmButton": "Confirmar Recepción",
+                    "serialNumbers": {
+                        "available": "Números de Serie Disponibles",
+                        "noAvailable": "No hay números de serie disponibles",
+                        "exactQuantity": "Debe seleccionar exactamente {{quantity}} números de serie",
+                        "selectUpTo": "Selecciona hasta {{quantity}} números de serie"
+                    },
+                    "used": "Recibir este producto"
+                },
+                "partiallyReceive": {
+                    "label": "Recibir Transferencia",
+                    "title": "Recibir Transferencia",
+                    "description": "Especifica qué productos y cantidades han sido recibidos de esta transferencia",
+                    "confirmButton": "Confirmar Recepción Parcial",
+                    "successMessage": "Recepción parcial registrada exitosamente",
+                    "errorMessage": "Error al registrar la recepción parcial",
+                    "formPlaceholder": "Aquí irá el formulario para especificar los productos recibidos parcialmente"
+                }
+            }
+        },
+        "productSerialNumbers": {
+            "title": "Números de Serie",
+            "subtitle": "Gestionar todos los números de serie de productos",
+            "titleForProduct": "Números de Serie - {{productName}}",
+            "subtitleForProduct": "Ver todos los números de serie para este producto",
+            "backToProduct": "Volver al Producto",
+            "table": {
+                "entityName": "números de serie",
+                "columns": {
+                    "productName": "Nombre del Producto",
+                    "serialNumber": "Número de Serie",
+                    "status": "Estado",
+                    "currentProvince": "Provincia Actual",
+                    "description": "Descripción",
+                    "receivedDate": "Fecha de Recepción",
+                    "soldDate": "Fecha de Venta",
+                    "createdAt": "Fecha de Creación"
+                }
+            },
+            "status": {
+                "Available": "Disponible",
+                "Sold": "Vendido",
+                "InTransit": "En Tránsito",
+                "Defective": "Defectuoso",
+                "Returned": "Devuelto"
+            }
+        },
+        "vendors": {
+            "list": {
+                "title": "Listado de Proveedores"
+            },
+            "create": {
+                "title": "Crear Proveedor",
+                "subTitle": "Agrega un nuevo proveedor a tu sistema",
+                "button": "Crear Proveedor",
+                "success": "Proveedor creado exitosamente"
+            },
+            "edit": {
+                "title": "Editar Proveedor",
+                "subTitle": "Modifica los datos del proveedor existente",
+                "button": "Actualizar Proveedor",
+                "success": "Proveedor actualizado exitosamente"
+            },
+            "form": {
+                "input": {
+                    "name": {
+                        "label": "Nombre del Proveedor",
+                        "placeholder": "Ej: Distribuidora ABC"
+                    },
+                    "email": {
+                        "label": "Correo Electrónico",
+                        "placeholder": "correo@proveedor.com"
+                    },
+                    "phone": {
+                        "label": "Teléfono",
+                        "placeholder": "Ej: +1 234 567 8900"
+                    },
+                    "address": {
+                        "label": "Dirección",
+                        "placeholder": "Dirección completa del proveedor..."
+                    },
+                    "isActive": {
+                        "label": "Proveedor Activo"
+                    }
+                }
+            },
+            "table": {
+                "entityName": "proveedores",
+                "createButton": "Crear Proveedor",
+                "columns": {
+                    "name": "Nombre",
+                    "email": "Correo Electrónico",
+                    "phone": "Teléfono",
+                    "address": "Dirección",
+                    "isActive": "Activo"
+                },
+                "badges": {
+                    "yes": "Sí",
+                    "no": "No"
+                }
+            },
+            "details": {
+                "subtitle": "Información detallada del proveedor",
+                "notFound": "Proveedor no encontrado",
+                "backToList": "Volver a proveedores",
+                "basicInfo": "Información Básica",
+                "contactInfo": "Información de Contacto",
+                "status": "Estado",
+                "metadata": "Metadatos",
+                "activeStatus": "Estado del Proveedor",
+                "activeStatusDescription": {
+                    "enabled": "Este proveedor está activo y disponible para operaciones",
+                    "disabled": "Este proveedor está inactivo y no está disponible para operaciones"
+                }
+            }
+        },
+        "notFound": {
+            "title": "ERROR",
+            "description": "¡No podemos encontrar la página que estás buscando!",
+            "backToHome": "Volver a la página principal",
+            "copyright": "89millas"
+        },
+        "purchaseOrders": {
+            "title": "Órdenes de Compra",
+            "titleSingle": "Orden de Compra",
+            "list": {
+                "title": "Listado de Órdenes de Compra"
+            },
+            "create": {
+                "title": "Crear Orden de Compra",
+                "subTitle": "Crea una nueva orden de compra para un proveedor",
+                "button": "Crear Orden",
+                "success": "Orden de compra creada exitosamente",
+                "items": {
+                    "required": "Debe agregar al menos un artículo",
+                    "validationError": "Al menos uno de los artículos tiene cantidad o precio incorrecto"
+                }
+            },
+            "edit": {
+                "title": "Editar Orden de Compra",
+                "subTitle": "Editar detalles de la orden de compra",
+                "button": "Actualizar Orden",
+                "success": "Orden de compra actualizada exitosamente"
+            },
+            "details": {
+                "title": "Detalles de la Orden de Compra",
+                "subtitle": "Información detallada de la orden",
+                "notFound": "Orden de compra no encontrada",
+                "backToList": "Volver a órdenes de compra",
+                "basicInfo": "Información Básica",
+                "orderItems": "Productos de la Orden",
+                "status": "Estado",
+                "metadata": "Metadatos",
+                "totalAmount": "Monto Total",
+                "printOrder": "Imprimir Orden",
+                "rejectionReason": "Motivo de Rechazo",
+                "cancellationReason": "Motivo de Cancelación",
+                "product": "Producto",
+                "unitPrice": "Precio Unitario",
+                "receptionProgress": "Progreso de Recepción",
+                "pending": "Pendiente",
+                "completed": "Completado",
+                "statistics": "Estadísticas",
+                "totalProducts": "Total de Productos",
+                "productsReceived": "Productos Recibidos",
+                "productsPending": "Productos Pendientes",
+                "completionRate": "Tasa de Completado",
+                "requestInfo": "Información de Solicitud",
+                "province": "Provincia",
+                "statusTimeline": "Cronología de Estados",
+                "requested": "Solicitado",
+                "approved": "Aprobado",
+                "shipped": "Enviado",
+                "received": "Recibido",
+                "rejected": "Rechazado",
+                "cancelled": "Cancelado"
+            },
+            "form": {
+                "vendor": {
+                    "label": "Proveedor",
+                    "placeholder": "Selecciona un proveedor"
+                },
+                "province": {
+                    "label": "Provincia asociada a la orden",
+                    "placeholder": "Selecciona la provincia"
+                },
+                "paymentType": {
+                    "label": "Tipo de Pago",
+                    "placeholder": "Selecciona el tipo de pago"
+                },
+                "observation": {
+                    "label": "Observación",
+                    "placeholder": "Agrega notas o comentarios adicionales..."
+                },
+                "items": {
+                    "label": "Productos a Ordenar",
+                    "placeholder": "Buscar y seleccionar productos...",
+                    "add": "Agregar Producto",
+                    "product": "Producto",
+                    "selectProduct": "Selecciona un producto (mínimo escriba 2 letras)",
+                    "quantity": "Cantidad",
+                    "unitPrice": "Precio Unitario",
+                    "total": "Total",
+                    "grandTotal": "Total General",
+                    "noItems": "No hay productos agregados",
+                    "error": {
+                        "alreadyAdded": "Este producto ya fue agregado a la orden"
+                    },
+                    "list": {
+                        "title": "Productos en la orden ({{count}} artículos)"
+                    },
+                    "totalItems": "Total: {{total}} unidades",
+                    "received": "Recibido",
+                    "maxToReceive": "Máx a recibir",
+                    "receivingNow": "Recibiendo: {{total}} unidades",
+                    "fullyReceived": "Completamente recibido",
+                    "requiresSerialNumber": "Requiere Número de Serie",
+                    "serialNumbers": "Números de Serie",
+                    "serialNumberPlaceholder": "Ingrese el número de serie",
+                    "serialNumbersHelp": "{{current}} de {{max}} números de serie agregados",
+                    "serialNumberDuplicate": "Número de Serie duplicado",
+                    "used": "Recibir este producto"
+                }
+            },
+            "table": {
+                "entityName": "órdenes de compra",
+                "createButton": "Crear Orden de Compra",
+                "columns": {
+                    "vendor": "Proveedor",
+                    "workflowStatus": "Estado",
+                    "totalPrice": "Precio Total",
+                    "requestedBy": "Solicitado por",
+                    "requestedAt": "Fecha de Solicitud",
+                    "approvedBy": "Aprobado por",
+                    "approvedAt": "Fecha de Aprobación",
+                    "rejectedBy": "Rechazado por",
+                    "rejectedAt": "Fecha de Rechazo",
+                    "receivedBy": "Recibido por",
+                    "receivedAt": "Fecha de Recepción",
+                    "cancelledBy": "Cancelado por",
+                    "cancelledAt": "Fecha de Cancelación",
+                    "shippedBy": "Enviado por",
+                    "shippedAt": "Fecha de Envío",
+                    "paymentType": "Tipo de Pago",
+                    "observation": "Observación",
+                    "orderLines": "Artículos del Pedido"
+                },
+                "badges": {
+                    "yes": "Sí",
+                    "no": "No"
+                }
+            },
+            "status": {
+                "PendingApproval": "Pendiente",
+                "Approved": "Aprobada",
+                "InTransit": "En Tránsito",
+                "FullyReceived": "Recibida",
+                "PartiallyReceived": "Parcialmente Recibida",
+                "Rejected": "Rechazada",
+                "Cancelled": "Cancelada"
+            },
+            "actions": {
+                "approve": {
+                    "label": "Aprobar",
+                    "title": "Aprobar Orden de Compra",
+                    "description": "¿Estás seguro de que quieres aprobar esta orden de compra?",
+                    "successMessage": "La orden de compra ha sido aprobada exitosamente",
+                    "errorMessage": "No se pudo aprobar la orden de compra"
+                },
+                "setInTransit": {
+                    "label": "Poner en Tránsito",
+                    "title": "Poner Orden de Compra en Tránsito",
+                    "confirmationMessage": "¿Está seguro que desea marcar esta Orden de compra como en tránsito?",
+                    "successMessage": "Orden de compra marcada como en tránsito exitosamente",
+                    "errorMessage": "Error al poner la Orden de Compra en tránsito"
+                },
+                "reject": {
+                    "label": "Rechazar",
+                    "title": "Rechazar Orden de Compra",
+                    "description": "¿Estás seguro de que quieres rechazar esta orden de compra?",
+                    "confirmationMessage": "¿Está seguro que desea rechazar esta orden de compra? Esta acción no se puede deshacer.",
+                    "successMessage": "La orden de compra ha sido rechazada exitosamente",
+                    "errorMessage": "No se pudo rechazar la orden de compra"
+                },
+                "receive": {
+                    "label": "Marcar como Recibida",
+                    "title": "Marcar Orden como Recibida",
+                    "description": "¿Estás seguro de que quieres marcar esta orden como completamente recibida?",
+                    "successMessage": "La orden de compra ha sido marcada como recibida",
+                    "errorMessage": "No se pudo marcar la orden como recibida"
+                },
+                "partiallyReceive": {
+                    "label": "Recibir",
+                    "title": "Recepción de Orden de Compra",
+                    "description": "Indica las cantidades recibidas para cada producto",
+                    "successMessage": "La recepción parcial ha sido registrada exitosamente",
+                    "errorMessage": "No se pudo registrar la recepción"
+                },
+                "cancel": {
+                    "label": "Cancelar",
+                    "title": "Cancelar Orden de Compra",
+                    "description": "¿Estás seguro de que quieres cancelar esta orden de compra?",
+                    "successMessage": "La orden de compra ha sido cancelada exitosamente",
+                    "errorMessage": "No se pudo cancelar la orden de compra"
+                }
+            },
+            "error": {
+                "noItems": "Al menos un producto debe ser agregado a la orden de compra",
+                "noVendor": "Debe seleccionar un proveedor",
+                "noPaymentType": "Debe seleccionar un tipo de pago"
+            },
+            "noVendors": {
+                "title": "No hay proveedores disponibles",
+                "description": "Para crear una orden de compra, primero necesitas tener al menos un proveedor registrado en el sistema.",
+                "createVendorButton": "Crear Proveedor"
+            }
+        },
+        "paymentType": {
+            "Unknown": "Desconocido",
+            "InCash": "En Efectivo",
+            "Gateway": "Pasarela de Pago",
+            "BankTransfer": "Transferencia Bancaria",
+            "CreditCard": "Tarjeta de Crédito",
+            "DebitCard": "Tarjeta de Débito",
+            "Check": "Cheque",
+            "Other": "Otro"
+        }
+    }
+}

@@ -1,0 +1,174 @@
+{
+    "common": {
+        "header": {
+            "title": "Administración",
+            "subTitle": "Subtitulo",
+            "userDropdown": {
+                "logout": "Salir"
+            }
+        },
+        "sidebar": {
+            "home": {
+                "title": "Inicio"
+            },
+            "province-products": {
+                "title": "Productos por provincia"
+            },
+            "products": {
+                "title": "Productos",
+                "details": "Detalles",
+                "create": "Agregar Producto",
+                "edit": "Editar Producto"
+            },
+            "categories": {
+                "title": "Categorías",
+                "create": "Crear Categoría",
+                "edit": "Editar Categoría",
+                "details": "Detalles"
+            },
+            "stockTransfers": {
+                "title": "Transferencias de inventario",
+                "details": "Detalles",
+                "create": "Crear Transferencia de inventario",
+                "edit": "Editar Transferencia de inventario"
+            },
+            "vendors": {
+                "title": "Proveedores",
+                "details": "Detalles",
+                "create": "Crear Proveedor",
+                "edit": "Editar Proveedor"
+            },
+            "purchaseOrders": {
+                "title": "Órdenes de Compra",
+                "details": "Detalles",
+                "create": "Crear Orden de Compra",
+                "edit": "Editar Orden de Compra"
+            }
+        },
+        "products": {
+            "list": "Listado de productos"
+        },
+        "notFoundElements": "No se encontraron elementos que coincidan con {{search}}",
+        "fields": {
+            "id": "Id",
+            "createdAt": "Creado el",
+            "modifiedAt": "Actualizado el",
+            "createdBy": "Creado por",
+            "modifiedBy": "Actualizado por"
+        },
+        "validation": {
+            "required": "Este campo es obligatorio",
+            "minimumLength": "Este campo debe tener al menos {{characters}} caracteres",
+            "minimumValue": "El valor debe ser mayor que {{value}}",
+            "maximumValue": "El valor debe ser menor que {{value}}",
+            "atLeastOneUsed": "Debe haber al menos un elemento marcado"
+        },
+        "success": {
+            "title": "Completado"
+        },
+        "error": {
+            "title": "Error",
+            "generic": "Ocurrió un error inesperado. Por favor contacte al equipo de desarrollo",
+            "api": {
+                "title": "Error de API"
+            }
+        },
+        "info": {
+            "title": "Información"
+        },
+        "warning": {
+            "title": "Advertencia"
+        },
+        "goBack": "Volver",
+        "add": "Agregar",
+        "loading": "Cargando",
+        "sorry": "Lo sentimos, no se encontraron resultados",
+        "tables": {
+            "noDataMessage": "No se encontraron {{entity}} asociados",
+            "pagination": {
+                "first": "",
+                "previous": "",
+                "next": "",
+                "last": "",
+                "page": "Página",
+                "of": "de",
+                "goToPage": "Ir a página",
+                "show": "Mostrar",
+                "totalItems": "Total de elementos"
+            },
+            "filters": {
+                "title": "Filtros",
+                "filterBy": "Filtrar por",
+                "applyFilters": "Aplicar Filtros",
+                "clearAll": "Limpiar Todo",
+                "selected": "seleccionados",
+                "more": "más",
+                "all": "Todos",
+                "from": "Desde",
+                "to": "Hasta",
+                "clear": "Limpiar"
+            },
+            "columns": {
+                "status": "Estado",
+                "isActive": "Activo",
+                "isNotActive": "Inactivo"
+            }
+        },
+        "cancel": "Cancelar",
+        "confirm": "Confirmar",
+        "true": "Verdadero",
+        "false": "Falso",
+        "yes": "Sí",
+        "no": "No",
+        "actions": {
+            "generic": {
+                "confirmationTitle": "Confirmación de acción",
+                "confirmationMessage": "¿Estás seguro de realizar esta acción?",
+                "successMessage": "La acción se ha realizado correctamente",
+                "errorMessage": "No se ha podido realizar la acción correctamente. Inténtelo de nuevo más tarde."
+            },
+            "confirmationWithNote": {
+                "notePlaceholder": "Escriba aquí una nota",
+                "noteLabel": "Nota"
+            },
+            "title": "Acciones",
+            "moreActions": "Más acciones",
+            "view": {
+                "label": "Ver detalles"
+            },
+            "edit": {
+                "label": "Editar"
+            },
+            "delete": {
+                "label": "Eliminar",
+                "confirmationMessage": "¿Estás seguro de eliminar esta entidad?",
+                "successMessage": "Se ha eliminado correctamente la entidad",
+                "errorMessage": "No se ha podido eliminar la entidad correctamente. Inténtelo de nuevo más tarde."
+            },
+            "restore": {
+                "label": "Restaurar",
+                "confirmationMessage": "¿Estás seguro de que quiere restaurar esta entidad?",
+                "successMessage": "Se ha restaurado correctamente la entidad",
+                "errorMessage": "No se ha podido restaurar la entidad correctamente. Inténtelo de nuevo más tarde."
+            }
+        },
+        "files": {
+            "label": "Imágenes",
+            "maxFiles": "Máximo {{count}} archivos",
+            "dropzone": {
+                "title": "Arrastra las imágenes aquí o haz clic para seleccionar",
+                "subtitle": "Formatos soportados: JPEG, PNG, WebP (máx. {{size}}MB cada una)"
+            },
+            "selectButton": "Seleccionar imágenes",
+            "error": {
+                "invalidType": "Tipo de archivo no válido. Solo se permiten JPEG, PNG y WebP",
+                "tooLarge": "El archivo es demasiado grande. Tamaño máximo: {{size}}MB"
+            }
+        },
+        "statusTimeline": {
+            "title": "Cronología de Estados",
+            "defaultUserLabel": "Usuario",
+            "defaultDateLabel": "Fecha"
+        }
+    }
+}
