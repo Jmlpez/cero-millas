@@ -37,11 +37,13 @@ cd nuvora-fakestore
 ```
 
 2. Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 3. Start the development server:
+
 ```bash
 pnpm run dev
 ```
