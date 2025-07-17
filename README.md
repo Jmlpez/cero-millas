@@ -15,7 +15,7 @@ A modern, responsive e-commerce website built with React, TypeScript, and Tailwi
 
 ## 🚀 Live Demo
 
-Visit the live site: [Nuvora Store](https://YOUR_USERNAME.github.io/nuvora-fakestore/)
+Visit the live site: [Nuvora Store](   https://YOUR_USERNAME.github.io/nuvora_fakestore/)
 
 ## 🛠️ Tech Stack
 
@@ -32,8 +32,8 @@ Visit the live site: [Nuvora Store](https://YOUR_USERNAME.github.io/nuvora-fakes
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nuvora-fakestore.git
-cd nuvora-fakestore
+git clone https://github.com/YOUR_USERNAME/nuvora_fakestore.git
+cd nuvora_fakestore
 ```
 
 2. Install dependencies:
@@ -66,13 +66,14 @@ The built files will be in the `dist` directory.
 
 1. **Create a GitHub repository** named `nuvora-fakestore`
 
-2. **Push your code**:
+1. **Create a GitHub repository** named `nuvora_fakestore`
 
+2. **Push your code**:
 ```bash
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/nuvora-fakestore.git
+git remote add origin https://github.com/YOUR_USERNAME/nuvora_fakestore.git
 git push -u origin main
 ```
 
