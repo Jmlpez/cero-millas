@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { useCart } from "@/contexts/cart-context";
 
 export const Cart = () => {
-    const { items, updateQuantity, removeFromCart, clearCart, getTotalPrice } = useCart();
+    const { items, updateQuantity, removeFromCart, clearCart, getTotalPrice } =
+        useCart();
 
     if (items.length === 0) {
         return (
@@ -13,9 +14,12 @@ export const Cart = () => {
                 <div className="container mx-auto px-4">
                     <div className="text-center py-16">
                         <ShoppingBag className="w-24 h-24 text-gray-400 mx-auto mb-8" />
-                        <h1 className="text-3xl font-bold text-gray-900 mb-4">Your Cart is Empty</h1>
+                        <h1 className="text-3xl font-bold text-gray-900 mb-4">
+                            Your Cart is Empty
+                        </h1>
                         <p className="text-gray-600 mb-8">
-                            Looks like you haven't added any items to your cart yet.
+                            Looks like you haven't added any items to your cart
+                            yet.
                         </p>
                         <Link to="/products">
                             <Button className="bg-blue-600 hover:bg-blue-700">
@@ -32,7 +36,9 @@ export const Cart = () => {
         <div className="min-h-screen bg-gray-50 py-8">
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between mb-8">
-                    <h1 className="text-3xl font-bold text-gray-900">Shopping Cart</h1>
+                    <h1 className="text-3xl font-bold text-gray-900">
+                        Shopping Cart
+                    </h1>
                     <Button
                         variant="outline"
                         onClick={clearCart}
@@ -53,7 +59,10 @@ export const Cart = () => {
                             </div>
                             <div className="p-6 space-y-6">
                                 {items.map((item) => (
-                                    <div key={item.id} className="flex items-center space-x-4 p-4 border rounded-lg hover:shadow-sm transition-shadow">
+                                    <div
+                                        key={item.id}
+                                        className="flex items-center space-x-4 p-4 border rounded-lg hover:shadow-sm transition-shadow"
+                                    >
                                         <div className="flex-shrink-0">
                                             <img
                                                 src={item.product.image}
@@ -75,11 +84,17 @@ export const Cart = () => {
                                             )}
                                             <div className="flex items-center space-x-2">
                                                 <span className="text-lg font-semibold text-gray-900">
-                                                    ${item.product.price.toFixed(2)}
+                                                    $
+                                                    {item.product.price.toFixed(
+                                                        2
+                                                    )}
                                                 </span>
                                                 {item.product.originalPrice && (
                                                     <span className="text-sm text-gray-500 line-through">
-                                                        ${item.product.originalPrice.toFixed(2)}
+                                                        $
+                                                        {item.product.originalPrice.toFixed(
+                                                            2
+                                                        )}
                                                     </span>
                                                 )}
                                             </div>
@@ -88,7 +103,12 @@ export const Cart = () => {
                                             <Button
                                                 variant="outline"
                                                 size="sm"
-                                                onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                                                onClick={() =>
+                                                    updateQuantity(
+                                                        item.id,
+                                                        item.quantity - 1
+                                                    )
+                                                }
                                                 disabled={item.quantity <= 1}
                                             >
                                                 <Minus className="w-4 h-4" />
@@ -99,19 +119,30 @@ export const Cart = () => {
                                             <Button
                                                 variant="outline"
                                                 size="sm"
-                                                onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                                                onClick={() =>
+                                                    updateQuantity(
+                                                        item.id,
+                                                        item.quantity + 1
+                                                    )
+                                                }
                                             >
                                                 <Plus className="w-4 h-4" />
                                             </Button>
                                         </div>
                                         <div className="text-right">
                                             <div className="text-lg font-semibold text-gray-900">
-                                                ${(item.product.price * item.quantity).toFixed(2)}
+                                                $
+                                                {(
+                                                    item.product.price *
+                                                    item.quantity
+                                                ).toFixed(2)}
                                             </div>
                                             <Button
                                                 variant="ghost"
                                                 size="sm"
-                                                onClick={() => removeFromCart(item.id)}
+                                                onClick={() =>
+                                                    removeFromCart(item.id)
+                                                }
                                                 className="text-red-600 hover:text-red-700 hover:bg-red-50 mt-2"
                                             >
                                                 <X className="w-4 h-4 mr-1" />
@@ -132,13 +163,21 @@ export const Cart = () => {
                             </h2>
                             <div className="space-y-4">
                                 <div className="flex justify-between">
-                                    <span className="text-gray-600">Subtotal</span>
-                                    <span className="font-medium">${getTotalPrice().toFixed(2)}</span>
+                                    <span className="text-gray-600">
+                                        Subtotal
+                                    </span>
+                                    <span className="font-medium">
+                                        ${getTotalPrice().toFixed(2)}
+                                    </span>
                                 </div>
                                 <div className="flex justify-between">
-                                    <span className="text-gray-600">Shipping</span>
+                                    <span className="text-gray-600">
+                                        Shipping
+                                    </span>
                                     <span className="font-medium">
-                                        {getTotalPrice() > 99 ? "FREE" : "$9.99"}
+                                        {getTotalPrice() > 99
+                                            ? "FREE"
+                                            : "$9.99"}
                                     </span>
                                 </div>
                                 <div className="flex justify-between">
@@ -151,27 +190,38 @@ export const Cart = () => {
                                     <div className="flex justify-between text-lg font-semibold">
                                         <span>Total</span>
                                         <span>
-                                            ${(getTotalPrice() + (getTotalPrice() > 99 ? 0 : 9.99) + getTotalPrice() * 0.08).toFixed(2)}
+                                            $
+                                            {(
+                                                getTotalPrice() +
+                                                (getTotalPrice() > 99
+                                                    ? 0
+                                                    : 9.99) +
+                                                getTotalPrice() * 0.08
+                                            ).toFixed(2)}
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
                                 Proceed to Checkout
                                 <ArrowRight className="w-4 h-4 ml-2" />
                             </Button>
-                            
+
                             <div className="mt-4 text-center">
-                                <Link to="/products" className="text-blue-600 hover:text-blue-700">
+                                <Link
+                                    to="/products"
+                                    className="text-blue-600 hover:text-blue-700"
+                                >
                                     Continue Shopping
                                 </Link>
                             </div>
-                            
+
                             {getTotalPrice() < 99 && (
                                 <div className="mt-4 p-3 bg-blue-50 rounded-lg">
                                     <p className="text-sm text-blue-800">
-                                        Add ${(99 - getTotalPrice()).toFixed(2)} more for free shipping!
+                                        Add ${(99 - getTotalPrice()).toFixed(2)}{" "}
+                                        more for free shipping!
                                     </p>
                                 </div>
                             )}

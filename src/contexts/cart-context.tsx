@@ -1,4 +1,10 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import {
+    createContext,
+    useContext,
+    useState,
+    useEffect,
+    ReactNode,
+} from "react";
 import { Product } from "@/data/mock-products";
 
 export interface CartItem {
@@ -53,13 +59,15 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     }, [items]);
 
     const addToCart = (product: Product, quantity = 1, variant?: string) => {
-        setItems(currentItems => {
+        setItems((currentItems) => {
             const existingItem = currentItems.find(
-                item => item.product.id === product.id && item.selectedVariant === variant
+                (item) =>
+                    item.product.id === product.id &&
+                    item.selectedVariant === variant
             );
 
             if (existingItem) {
-                return currentItems.map(item =>
+                return currentItems.map((item) =>
                     item.id === existingItem.id
                         ? { ...item, quantity: item.quantity + quantity }
                         : item
@@ -78,7 +86,9 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     };
 
     const removeFromCart = (id: number) => {
-        setItems(currentItems => currentItems.filter(item => item.id !== id));
+        setItems((currentItems) =>
+            currentItems.filter((item) => item.id !== id)
+        );
     };
 
     const updateQuantity = (id: number, quantity: number) => {
@@ -87,8 +97,8 @@ export const CartProvider = ({ children }: CartProviderProps) => {
             return;
         }
 
-        setItems(currentItems =>
-            currentItems.map(item =>
+        setItems((currentItems) =>
+            currentItems.map((item) =>
                 item.id === id ? { ...item, quantity } : item
             )
         );
@@ -105,7 +115,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     const getTotalPrice = () => {
         return items.reduce((total, item) => {
             const price = item.product.price; // Use the current price (already discounted)
-            return total + (price * item.quantity);
+            return total + price * item.quantity;
         }, 0);
     };
 

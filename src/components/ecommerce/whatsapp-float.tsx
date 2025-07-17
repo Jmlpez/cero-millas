@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/button";
 export const WhatsAppFloat = () => {
     const [isOpen, setIsOpen] = useState(false);
     const whatsappNumber = "+1234567890"; // Replace with your WhatsApp number
-    
+
     const handleWhatsAppClick = () => {
-        const message = encodeURIComponent("Hello! I'm interested in your products from Nuvora Store.");
+        const message = encodeURIComponent(
+            "Hello! I'm interested in your products from Nuvora Store."
+        );
         const url = `https://wa.me/${whatsappNumber}?text=${message}`;
         window.open(url, "_blank");
     };
@@ -39,14 +41,17 @@ export const WhatsAppFloat = () => {
                             </div>
                             <div>
                                 <h3 className="font-semibold">Nuvora Store</h3>
-                                <p className="text-sm text-green-100">We're here to help!</p>
+                                <p className="text-sm text-green-100">
+                                    We're here to help!
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div className="p-4">
                         <div className="bg-gray-100 rounded-lg p-3 mb-4">
                             <p className="text-sm text-gray-800">
-                                👋 Hello! Welcome to Nuvora Store. How can we help you today?
+                                👋 Hello! Welcome to Nuvora Store. How can we
+                                help you today?
                             </p>
                         </div>
                         <div className="space-y-2">

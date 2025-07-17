@@ -6,7 +6,7 @@ echo "🚀 Starting deployment to GitHub Pages..."
 
 # Build the project
 echo "📦 Building project..."
-npm run build
+pnpm run build
 
 # Check if build was successful
 if [ $? -eq 0 ]; then

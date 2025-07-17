@@ -11,7 +11,8 @@ export const About = () => {
                             About Nuvora Store
                         </h1>
                         <p className="text-xl text-blue-100 leading-relaxed">
-                            Your trusted destination for quality products and exceptional shopping experience since 2020
+                            Your trusted destination for quality products and
+                            exceptional shopping experience since 2020
                         </p>
                     </div>
                 </div>
@@ -27,29 +28,54 @@ export const About = () => {
                                     Our Story
                                 </h2>
                                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                    Founded in 2020, Nuvora Store began as a vision to create an exceptional online shopping experience. We believe that everyone deserves access to quality products at fair prices, delivered with outstanding customer service.
+                                    Founded in 2020, Nuvora Store began as a
+                                    vision to create an exceptional online
+                                    shopping experience. We believe that
+                                    everyone deserves access to quality products
+                                    at fair prices, delivered with outstanding
+                                    customer service.
                                 </p>
                                 <p className="text-gray-600 text-lg leading-relaxed">
-                                    Today, we serve thousands of customers worldwide, offering carefully curated products across multiple categories, from electronics to home goods, fashion to beauty products.
+                                    Today, we serve thousands of customers
+                                    worldwide, offering carefully curated
+                                    products across multiple categories, from
+                                    electronics to home goods, fashion to beauty
+                                    products.
                                 </p>
                             </div>
                             <div className="bg-white p-8 rounded-lg shadow-lg">
                                 <div className="grid grid-cols-2 gap-6">
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-blue-600 mb-2">50K+</div>
-                                        <div className="text-gray-600">Happy Customers</div>
+                                        <div className="text-3xl font-bold text-blue-600 mb-2">
+                                            50K+
+                                        </div>
+                                        <div className="text-gray-600">
+                                            Happy Customers
+                                        </div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
-                                        <div className="text-gray-600">Products</div>
+                                        <div className="text-3xl font-bold text-blue-600 mb-2">
+                                            1000+
+                                        </div>
+                                        <div className="text-gray-600">
+                                            Products
+                                        </div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-blue-600 mb-2">99%</div>
-                                        <div className="text-gray-600">Satisfaction Rate</div>
+                                        <div className="text-3xl font-bold text-blue-600 mb-2">
+                                            99%
+                                        </div>
+                                        <div className="text-gray-600">
+                                            Satisfaction Rate
+                                        </div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
-                                        <div className="text-gray-600">Support</div>
+                                        <div className="text-3xl font-bold text-blue-600 mb-2">
+                                            24/7
+                                        </div>
+                                        <div className="text-gray-600">
+                                            Support
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -70,27 +96,37 @@ export const About = () => {
                                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Award className="w-8 h-8 text-blue-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">Quality First</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    Quality First
+                                </h3>
                                 <p className="text-gray-600">
-                                    We carefully select every product to ensure it meets our high standards for quality and durability.
+                                    We carefully select every product to ensure
+                                    it meets our high standards for quality and
+                                    durability.
                                 </p>
                             </div>
                             <div className="text-center">
                                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Users className="w-8 h-8 text-blue-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">Customer Focused</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    Customer Focused
+                                </h3>
                                 <p className="text-gray-600">
-                                    Your satisfaction is our priority. We're here to help you find exactly what you need.
+                                    Your satisfaction is our priority. We're
+                                    here to help you find exactly what you need.
                                 </p>
                             </div>
                             <div className="text-center">
                                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Globe className="w-8 h-8 text-blue-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3">Global Reach</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                                    Global Reach
+                                </h3>
                                 <p className="text-gray-600">
-                                    We deliver worldwide, bringing quality products to customers wherever they are.
+                                    We deliver worldwide, bringing quality
+                                    products to customers wherever they are.
                                 </p>
                             </div>
                         </div>
@@ -106,48 +142,70 @@ export const About = () => {
                             Our Mission
                         </h2>
                         <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                            To make quality products accessible to everyone, while providing an exceptional shopping experience that exceeds expectations.
+                            To make quality products accessible to everyone,
+                            while providing an exceptional shopping experience
+                            that exceeds expectations.
                         </p>
                         <div className="grid md:grid-cols-2 gap-8 mt-12">
                             <div className="bg-white p-6 rounded-lg shadow-lg">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">What We Promise</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                                    What We Promise
+                                </h3>
                                 <ul className="space-y-3 text-left">
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                        <span className="text-gray-600">Fast and reliable shipping</span>
+                                        <span className="text-gray-600">
+                                            Fast and reliable shipping
+                                        </span>
                                     </li>
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                        <span className="text-gray-600">Quality guarantee on all products</span>
+                                        <span className="text-gray-600">
+                                            Quality guarantee on all products
+                                        </span>
                                     </li>
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                        <span className="text-gray-600">Easy returns and exchanges</span>
+                                        <span className="text-gray-600">
+                                            Easy returns and exchanges
+                                        </span>
                                     </li>
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                        <span className="text-gray-600">24/7 customer support</span>
+                                        <span className="text-gray-600">
+                                            24/7 customer support
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
                             <div className="bg-white p-6 rounded-lg shadow-lg">
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Us</h3>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                                    Why Choose Us
+                                </h3>
                                 <ul className="space-y-3 text-left">
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                        <span className="text-gray-600">Competitive prices</span>
+                                        <span className="text-gray-600">
+                                            Competitive prices
+                                        </span>
                                     </li>
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                        <span className="text-gray-600">Secure payment options</span>
+                                        <span className="text-gray-600">
+                                            Secure payment options
+                                        </span>
                                     </li>
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                        <span className="text-gray-600">Wide product selection</span>
+                                        <span className="text-gray-600">
+                                            Wide product selection
+                                        </span>
                                     </li>
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                        <span className="text-gray-600">Trusted by thousands</span>
+                                        <span className="text-gray-600">
+                                            Trusted by thousands
+                                        </span>
                                     </li>
                                 </ul>
                             </div>

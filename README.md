@@ -30,6 +30,7 @@ Visit the live site: [Nuvora Store](https://YOUR_USERNAME.github.io/nuvora-fakes
 ## 📦 Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/nuvora-fakestore.git
 cd nuvora-fakestore
@@ -37,12 +38,12 @@ cd nuvora-fakestore
 
 2. Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 3. Start the development server:
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 4. Open http://localhost:5173 in your browser
@@ -52,7 +53,7 @@ npm run dev
 To build the project for production:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 The built files will be in the `dist` directory.
@@ -64,6 +65,7 @@ The built files will be in the `dist` directory.
 1. **Create a GitHub repository** named `nuvora-fakestore`
 
 2. **Push your code**:
+
 ```bash
 git add .
 git commit -m "Initial commit"
@@ -73,9 +75,10 @@ git push -u origin main
 ```
 
 3. **Enable GitHub Pages**:
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Set source to "GitHub Actions"
+
+    - Go to your repository settings
+    - Navigate to "Pages" section
+    - Set source to "GitHub Actions"
 
 4. **The site will automatically deploy** when you push to main branch
 
@@ -90,22 +93,26 @@ You can also use the included deployment script:
 ## 🎨 Customization
 
 ### Colors & Branding
+
 - Update colors in `tailwind.config.js`
 - Change logo and brand name in `src/components/ecommerce/header.tsx`
 - Modify the color scheme throughout the components
 
 ### Product Data
+
 - Update product information in `src/data/mock-products.ts`
 - Add new categories and products as needed
 - Modify product properties to match your needs
 
 ### WhatsApp Integration
+
 - Update the WhatsApp number in `src/components/ecommerce/whatsapp-float.tsx`
 - Customize the chat widget appearance and messages
 
 ## 📱 Features Overview
 
 ### Shopping Cart
+
 - Add/remove items
 - Quantity management
 - localStorage persistence
@@ -113,6 +120,7 @@ You can also use the included deployment script:
 - Free shipping threshold
 
 ### Product Pages
+
 - Image galleries with navigation
 - Product specifications
 - Related products
@@ -120,6 +128,7 @@ You can also use the included deployment script:
 - Customer reviews display
 
 ### Responsive Design
+
 - Mobile-first approach
 - Touch-friendly interface
 - Optimized for all screen sizes
@@ -128,14 +137,18 @@ You can also use the included deployment script:
 ## 🔧 Configuration
 
 ### Vite Configuration
+
 The project uses Vite for build tooling. Key configurations:
+
 - Base path set for GitHub Pages
 - TypeScript support
 - TailwindCSS integration
 - Path aliases for clean imports
 
 ### Environment Variables
+
 Create a `.env` file for environment-specific settings:
+
 ```
 VITE_WHATSAPP_NUMBER=+1234567890
 VITE_SITE_URL=https://yourdomain.com
@@ -167,6 +180,7 @@ For support, email support@nuvorastore.com or use the WhatsApp button on the web
 ---
 
 Made with ❤️ by [Your Name]
+
 - `pages`: Contains the main pages of the application. (Example: `Home`, `About`, etc.)
 - `layouts`: Contains layout components for the application. (Example: `MainLayout`, `AuthLayout`, etc.)
 - `providers`: Contains context providers for state management and other functionalities. (Example: `AuthProvider`,
