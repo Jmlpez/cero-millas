@@ -15,7 +15,7 @@ A modern, responsive e-commerce website built with React, TypeScript, and Tailwi
 
 ## 🚀 Live Demo
 
-Visit the live site: [Nuvora Store](   https://YOUR_USERNAME.github.io/nuvora_fakestore/)
+Visit the live site: [Nuvora Store](https://YOUR_USERNAME.github.io/nuvora_fakestore/)
 
 ## 🛠️ Tech Stack
 
@@ -68,7 +68,8 @@ The built files will be in the `dist` directory.
 
 1. **Create a GitHub repository** named `nuvora_fakestore`
 
-2. **Push your code**:
+1. **Push your code**:
+
 ```bash
 git add .
 git commit -m "Initial commit"

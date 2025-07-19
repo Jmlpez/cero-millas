@@ -122,7 +122,7 @@ export const EcommerceHeader = () => {
                             >
                                 <ShoppingCart className="h-5 w-5" />
                                 {cartItemCount > 0 && (
-                                    <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 text-xs bg-blue-600">
+                                    <Badge className="text-white font-bold absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 text-xs bg-blue-600">
                                         {cartItemCount}
                                     </Badge>
                                 )}
