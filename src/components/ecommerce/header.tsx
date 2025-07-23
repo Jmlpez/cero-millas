@@ -44,7 +44,7 @@ export const EcommerceHeader = () => {
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-2">
                         <img
-                            src={"public/assets/images/logo/logo.webp"}
+                            src={"assets/images/logo/logo.webp"}
                             alt="Cero Millas"
                             className="w-full h-full max-h-12"
                         />
