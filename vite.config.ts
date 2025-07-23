@@ -5,7 +5,7 @@ import checker from "vite-plugin-checker";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-    base: "/nuvora_fakestore/", // Match your actual GitHub repository name
+    base: "/cero-millas/", // Match your actual GitHub repository name
     plugins: [
         react(),
         tailwindcss(),
