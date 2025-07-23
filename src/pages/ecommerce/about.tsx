@@ -8,7 +8,7 @@ export const About = () => {
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto text-center">
                         <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                            About Nuvora Store
+                            About Cero Millas
                         </h1>
                         <p className="text-xl text-blue-100 leading-relaxed">
                             Your trusted destination for quality products and
@@ -28,7 +28,7 @@ export const About = () => {
                                     Our Story
                                 </h2>
                                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                    Founded in 2020, Nuvora Store began as a
+                                    Founded in 2020, Cero Millas began as a
                                     vision to create an exceptional online
                                     shopping experience. We believe that
                                     everyone deserves access to quality products

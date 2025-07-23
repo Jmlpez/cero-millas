@@ -43,7 +43,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
 
     // Load cart from localStorage on mount
     useEffect(() => {
-        const savedCart = localStorage.getItem("nuvora-cart");
+        const savedCart = localStorage.getItem("zeromiles-cart");
         if (savedCart) {
             try {
                 setItems(JSON.parse(savedCart));
@@ -55,7 +55,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
 
     // Save cart to localStorage whenever items change
     useEffect(() => {
-        localStorage.setItem("nuvora-cart", JSON.stringify(items));
+        localStorage.setItem("zeromiles-cart", JSON.stringify(items));
     }, [items]);
 
     const addToCart = (product: Product, quantity = 1, variant?: string) => {

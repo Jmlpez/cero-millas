@@ -8,7 +8,7 @@ export const WhatsAppFloat = () => {
 
     const handleWhatsAppClick = () => {
         const message = encodeURIComponent(
-            "Hello! I'm interested in your products from Nuvora Store."
+            "Hello! I'm interested in your products from Zero Miles."
         );
         const url = `https://wa.me/${whatsappNumber}?text=${message}`;
         window.open(url, "_blank");
@@ -40,7 +40,7 @@ export const WhatsAppFloat = () => {
                                 <MessageCircle className="w-5 h-5 text-green-500" />
                             </div>
                             <div>
-                                <h3 className="font-semibold">Nuvora Store</h3>
+                                <h3 className="font-semibold">Cero Millas</h3>
                                 <p className="text-sm text-green-100">
                                     We're here to help!
                                 </p>
@@ -50,7 +50,7 @@ export const WhatsAppFloat = () => {
                     <div className="p-4">
                         <div className="bg-gray-100 rounded-lg p-3 mb-4">
                             <p className="text-sm text-gray-800">
-                                👋 Hello! Welcome to Nuvora Store. How can we
+                                👋 Hello! Welcome to Cero Millas. How can we
                                 help you today?
                             </p>
                         </div>

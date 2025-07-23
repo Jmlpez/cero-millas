@@ -3,7 +3,7 @@
 # GitHub Pages Deployment Instructions
 # ====================================
 
-echo "🚀 Nuvora Store - GitHub Pages Deployment Guide"
+echo "🚀 Zero Miles - GitHub Pages Deployment Guide"
 echo "================================================"
 echo ""
 echo "Your project is ready for GitHub Pages deployment!"

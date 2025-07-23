@@ -53,7 +53,7 @@ export const Support = () => {
         {
             icon: Phone,
             title: "Phone Support",
-            description: "Call us at +1-800-NUVORA",
+            description: "Call us at +1-800-ZEROMILES",
             availability: "Mon-Fri 9AM-6PM EST",
             action: "Call Now",
             color: "bg-green-500",
@@ -61,7 +61,7 @@ export const Support = () => {
         {
             icon: Mail,
             title: "Email Support",
-            description: "support@nuvorastore.com",
+            description: "support@zeromiles.com",
             availability: "Response within 24 hours",
             action: "Send Email",
             color: "bg-purple-500",
@@ -71,7 +71,7 @@ export const Support = () => {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
-            <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+            <section className="bg-gradient-to-r fro    m-blue-600 to-purple-600 text-white py-16">
                 <div className="container mx-auto px-4">
                     <div className="text-center">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">
