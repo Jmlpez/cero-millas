@@ -11,8 +11,9 @@ export const About = () => {
                             About Cero Millas
                         </h1>
                         <p className="text-xl text-blue-100 leading-relaxed">
-                            Your trusted destination for quality products and
-                            exceptional shopping experience since 2020
+                            We're closer than any other store - bringing quality
+                            products right to your doorstep with unmatched
+                            convenience since 2020
                         </p>
                     </div>
                 </div>
@@ -28,19 +29,21 @@ export const About = () => {
                                     Our Story
                                 </h2>
                                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                    Founded in 2020, Cero Millas began as a
-                                    vision to create an exceptional online
-                                    shopping experience. We believe that
-                                    everyone deserves access to quality products
-                                    at fair prices, delivered with outstanding
-                                    customer service.
+                                    Founded in 2020, Cero Millas was born from a
+                                    simple idea: why should distance matter when
+                                    shopping? We set out to be the closest store
+                                    to every customer, eliminating the gap
+                                    between what you want and what you can get.
+                                    No matter where you are, we're always zero
+                                    miles away.
                                 </p>
                                 <p className="text-gray-600 text-lg leading-relaxed">
-                                    Today, we serve thousands of customers
-                                    worldwide, offering carefully curated
-                                    products across multiple categories, from
-                                    electronics to home goods, fashion to beauty
-                                    products.
+                                    Today, we've made that vision a reality by
+                                    bringing thousands of quality products
+                                    closer to customers worldwide. Through
+                                    innovative logistics, personalized service,
+                                    and a commitment to convenience, we've
+                                    redefined what it means to shop online.
                                 </p>
                             </div>
                             <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -97,12 +100,12 @@ export const About = () => {
                                     <Award className="w-8 h-8 text-blue-600" />
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    Quality First
+                                    Closer to You
                                 </h3>
                                 <p className="text-gray-600">
-                                    We carefully select every product to ensure
-                                    it meets our high standards for quality and
-                                    durability.
+                                    We leverage cutting-edge logistics and local
+                                    partnerships to bring products closer to you
+                                    than ever before.
                                 </p>
                             </div>
                             <div className="text-center">
@@ -110,11 +113,12 @@ export const About = () => {
                                     <Users className="w-8 h-8 text-blue-600" />
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    Customer Focused
+                                    Zero Distance Service
                                 </h3>
                                 <p className="text-gray-600">
-                                    Your satisfaction is our priority. We're
-                                    here to help you find exactly what you need.
+                                    Our personalized approach makes you feel
+                                    like we're right next door, ready to help
+                                    whenever you need us.
                                 </p>
                             </div>
                             <div className="text-center">
@@ -122,11 +126,12 @@ export const About = () => {
                                     <Globe className="w-8 h-8 text-blue-600" />
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                    Global Reach
+                                    Instant Accessibility
                                 </h3>
                                 <p className="text-gray-600">
-                                    We deliver worldwide, bringing quality
-                                    products to customers wherever they are.
+                                    No matter where you are in the world, we
+                                    bring the store experience directly to you
+                                    with lightning speed.
                                 </p>
                             </div>
                         </div>
@@ -142,9 +147,10 @@ export const About = () => {
                             Our Mission
                         </h2>
                         <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                            To make quality products accessible to everyone,
-                            while providing an exceptional shopping experience
-                            that exceeds expectations.
+                            To eliminate the distance between customers and the
+                            products they love, making shopping feel effortless
+                            and personal, as if your favorite store was always
+                            just around the corner.
                         </p>
                         <div className="grid md:grid-cols-2 gap-8 mt-12">
                             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -155,7 +161,7 @@ export const About = () => {
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
                                         <span className="text-gray-600">
-                                            Fast and reliable shipping
+                                            Lightning-fast delivery
                                         </span>
                                     </li>
                                     <li className="flex items-start">
@@ -173,7 +179,7 @@ export const About = () => {
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
                                         <span className="text-gray-600">
-                                            24/7 customer support
+                                            Always available support
                                         </span>
                                     </li>
                                 </ul>
@@ -186,7 +192,7 @@ export const About = () => {
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
                                         <span className="text-gray-600">
-                                            Competitive prices
+                                            Closer than competitors
                                         </span>
                                     </li>
                                     <li className="flex items-start">
@@ -204,7 +210,7 @@ export const About = () => {
                                     <li className="flex items-start">
                                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
                                         <span className="text-gray-600">
-                                            Trusted by thousands
+                                            Zero-distance shopping experience
                                         </span>
                                     </li>
                                 </ul>
