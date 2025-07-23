@@ -43,14 +43,19 @@ export const EcommerceHeader = () => {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-2">
-                        <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <img
+                            src={"public/assets/images/logo/logo.webp"}
+                            alt="Nuvora Store"
+                            className="w-full h-full max-h-12"
+                        />
+                        {/* <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                             <span className="text-white font-bold text-lg">
                                 N
                             </span>
                         </div>
                         <span className="text-xl font-bold text-slate-900">
                             Nuvora Store
-                        </span>
+                        </span> */}
                     </Link>
 
                     {/* Desktop Navigation */}
