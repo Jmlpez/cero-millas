@@ -53,7 +53,7 @@ export const Support = () => {
         {
             icon: Phone,
             title: "Phone Support",
-            description: "Call us at +1-800-ZEROMILES",
+            description: "Call us at +1-800-THEMILES",
             availability: "Mon-Fri 9AM-6PM EST",
             action: "Call Now",
             color: "bg-green-500",
@@ -61,7 +61,7 @@ export const Support = () => {
         {
             icon: Mail,
             title: "Email Support",
-            description: "support@zeromiles.com",
+            description: "support@themiles.com",
             availability: "Response within 24 hours",
             action: "Send Email",
             color: "bg-purple-500",

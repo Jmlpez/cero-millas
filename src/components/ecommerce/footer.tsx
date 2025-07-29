@@ -47,11 +47,11 @@ export const EcommerceFooter = () => {
                         <div className="flex items-center space-x-2 mb-4">
                             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                                 <span className="text-white font-bold text-lg">
-                                    Z
+                                    M
                                 </span>
                             </div>
                             <span className="text-xl font-bold">
-                                Zero Miles
+                                Las Millas
                             </span>
                         </div>
                         <p className="text-slate-300 mb-4">
@@ -207,7 +207,7 @@ export const EcommerceFooter = () => {
                             <div className="flex items-center space-x-3">
                                 <Mail className="h-4 w-4 text-slate-400" />
                                 <span className="text-slate-300">
-                                    support@zeromiles.com
+                                    support@themiles.com
                                 </span>
                             </div>
                         </div>
@@ -229,7 +229,7 @@ export const EcommerceFooter = () => {
                 <div className="container mx-auto px-4 py-4">
                     <div className="flex flex-col md:flex-row items-center justify-between">
                         <p className="text-slate-400 text-sm mb-2 md:mb-0">
-                            © 2024 Zero Miles. All rights reserved.
+                            © 2025 Las Millas. All rights reserved.
                         </p>
                         <div className="flex items-center space-x-6 text-sm">
                             <Link

@@ -45,17 +45,9 @@ export const EcommerceHeader = () => {
                     <Link to="/" className="flex items-center space-x-2">
                         <img
                             src={"assets/images/logo/logo.webp"}
-                            alt="Cero Millas"
+                            alt="Las Millas"
                             className="w-full h-full max-h-12"
                         />
-                        {/* <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">
-                                N
-                            </span>
-                        </div>
-                        <span className="text-xl font-bold text-slate-900">
-                            Zero Miles
-                        </span> */}
                     </Link>
 
                     {/* Desktop Navigation */}

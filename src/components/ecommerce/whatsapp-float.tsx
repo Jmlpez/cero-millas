@@ -50,7 +50,7 @@ export const WhatsAppFloat = () => {
                     <div className="p-4">
                         <div className="bg-gray-100 rounded-lg p-3 mb-4">
                             <p className="text-sm text-gray-800">
-                                👋 Hello! Welcome to Cero Millas. How can we
+                                👋 Hello! Welcome to Las Millas. How can we
                                 help you today?
                             </p>
                         </div>
